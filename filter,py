@@ -1,0 +1,10 @@
+#printing even numbers in a list using filter function
+def is_even(n):
+  return n%2==0
+n=int(input("enter the limit"))
+nums=[]
+for i in range(1,n+1):
+  x=int(input("enter the next number"))
+  nums.append(x)
+even=list(filter(is_even, nums))
+print(even)
